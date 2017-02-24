@@ -1,6 +1,6 @@
-var mongoose = require( 'mongoose' );
+const mongoose = require( 'mongoose' );
 
-var tokenSchema = new mongoose.Schema({
+const tokenSchema = new mongoose.Schema({
   token: {
     type: String,
     unique: true,

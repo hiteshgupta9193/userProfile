@@ -27,7 +27,7 @@ module.exports.updateProfile = function (req, res) {
       });
     } else {
       User
-        .findById(req.payload.sub)
+        .findById(payload.sub)
         .exec(function (err, user) {
           user.status = req.body.status || user.status;
           user.dob = req.body.dob || user.dob;
